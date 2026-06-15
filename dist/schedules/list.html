@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Mata Kuliah</title>
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="/static/js/public.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <i class="bi bi-pc-display-horizontal"></i>
+            Inventaris Lab Kom
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPublic">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarPublic">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="/">
+                        <i class="bi bi-grid-3x3-gap"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/pc/list.html">
+                        <i class="bi bi-pc-display"></i> PC
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/devices/list.html">
+                        <i class="bi bi-hdd-rack"></i> Perangkat
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/software/list.html">
+                        <i class="bi bi-app-indicator"></i> Software
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/schedules/list.html">
+                        <i class="bi bi-calendar-event"></i> Jadwal
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid my-4">
+
+
+
+<div class="container-fluid mt-4">
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h2><i class="bi bi-calendar-event"></i> Jadwal Mata Kuliah</h2>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div id="schedule-table-container" class="table-responsive"></div>
+        </div>
+    </div>
+</div>
+
+<script id="data-schedules" type="application/json">[{"id":1,"course_name":"Praktek Pemrograman Web Lanjut","lecturer":"Pak Kurniawan","day":"Senin","class":"2024 D","time_start":"07:00","time_end":"08:40","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":2,"course_name":"Praktek Pemrograman Web Lanjut","lecturer":"Pak Kurniawan","day":"Senin","class":"2024 E","time_start":"08:40","time_end":"10:20","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":3,"course_name":"Praktek Pemrograman Web Lanjut","lecturer":"Pak Kurniawan","day":"Senin","class":"2024 I","time_start":"10:20","time_end":"12:00","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":4,"course_name":"Praktek Pemrograman Mobile","lecturer":"Pak Dimas","day":"Selasa","class":"2024 I","time_start":"07:00","time_end":"08:40","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":5,"course_name":"Praktek Pemrograman Mobile","lecturer":"Pak Dimas","day":"Selasa","class":"2024 E","time_start":"08:40","time_end":"10:20","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":6,"course_name":"Praktek Pemrograman Mobile","lecturer":"Pak Dimas","day":"Selasa","class":"2024 D","time_start":"10:20","time_end":"12:00","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":7,"course_name":"Praktek Pemrograman Web Lanjut","lecturer":"Pak Faris","day":"Rabu","class":"2024 B","time_start":"07:00","time_end":"08:40","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":8,"course_name":"Praktek Pemrograman Web Lanjut","lecturer":"Pak Faris","day":"Rabu","class":"2024 C","time_start":"08:40","time_end":"10:20","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":9,"course_name":"Praktek Pemrograman Web Lanjut","lecturer":"Pak Faris","day":"Rabu","class":"2024 A","time_start":"10:20","time_end":"12:00","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":10,"course_name":"Praktek Pemrograman Api","lecturer":"Pak Faris","day":"Kamis","class":"2024 C","time_start":"07:00","time_end":"08:40","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":11,"course_name":"Praktek Pemrograman Api","lecturer":"Pak Faris","day":"Kamis","class":"2024 D","time_start":"08:40","time_end":"10:20","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":12,"course_name":"Praktek Pemrograman Api","lecturer":"Pak Faris","day":"Kamis","class":"2024 I","time_start":"10:20","time_end":"12:00","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":13,"course_name":"Praktek Pemrograman Mobile","lecturer":"Pak I Gde Agung","day":"Jumat","class":"2024 A","time_start":"07:00","time_end":"08:40","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":14,"course_name":"Praktek Pemrograman Mobile","lecturer":"Pak I Gde Agung","day":"Jumat","class":"2024 B","time_start":"08:40","time_end":"10:20","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"},{"id":15,"course_name":"Praktek Pemrograman Mobile","lecturer":"Pak I Gde Agung","day":"Jumat","class":"2024 C","time_start":"10:20","time_end":"12:00","notes":"","created_at":"0001-01-01T00:00:00Z","updated_at":"0001-01-01T00:00:00Z"}]</script>
+<script>
+initPublicTable({
+    containerId: "schedule-table-container",
+    data: JSON.parse(document.getElementById("data-schedules").textContent),
+    columns: [
+        { field: "day", label: "Hari", sortable: true, filterable: true,
+          render: function(v) { return '<span class="badge bg-primary">' + v + '</span>'; } },
+        { field: "course_name", label: "Mata Kuliah", sortable: true },
+        { field: "class", label: "Kelas", sortable: true },
+        { field: "lecturer", label: "Dosen", sortable: true },
+        { field: "time_start", label: "Jam Mulai", sortable: true },
+        { field: "time_end", label: "Jam Selesai", sortable: true }
+    ],
+    searchFields: ["course_name", "lecturer", "class", "day"],
+    groupBy: ["day", "course_name"],
+    groupConfig: {
+        day: { order: ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"] }
+    },
+    highlightToday: true
+});
+</script>
+
+
+    </div>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
