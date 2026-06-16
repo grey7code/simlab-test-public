@@ -7,8 +7,8 @@
     "slug": "android-studio",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 25,
-    "total_pcs": 56
+    "installed_count": 21,
+    "total_pcs": 43
   },
   {
     "id": 5,
@@ -18,8 +18,8 @@
     "slug": "blender",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 35,
-    "total_pcs": 56
+    "installed_count": 31,
+    "total_pcs": 43
   },
   {
     "id": 6,
@@ -29,8 +29,8 @@
     "slug": "cisco-packet-tracer",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 35,
-    "total_pcs": 56
+    "installed_count": 31,
+    "total_pcs": 43
   },
   {
     "id": 9,
@@ -40,8 +40,8 @@
     "slug": "composer",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 34,
-    "total_pcs": 56
+    "installed_count": 29,
+    "total_pcs": 43
   },
   {
     "id": 12,
@@ -51,8 +51,8 @@
     "slug": "figma",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 15,
-    "total_pcs": 56
+    "installed_count": 11,
+    "total_pcs": 43
   },
   {
     "id": 11,
@@ -62,8 +62,8 @@
     "slug": "git",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 24,
-    "total_pcs": 56
+    "installed_count": 20,
+    "total_pcs": 43
   },
   {
     "id": 13,
@@ -73,19 +73,19 @@
     "slug": "node-js",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 14,
-    "total_pcs": 56
+    "installed_count": 9,
+    "total_pcs": 43
   },
   {
     "id": 2,
-    "name": "Php + Xampp",
+    "name": "PHP + Xampp",
     "category": "required",
     "description": "Web server lokal dengan PHP dan MySQL",
     "slug": "php-xampp",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 40,
-    "total_pcs": 56
+    "installed_count": 37,
+    "total_pcs": 43
   },
   {
     "id": 8,
@@ -95,8 +95,8 @@
     "slug": "postman",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 35,
-    "total_pcs": 56
+    "installed_count": 31,
+    "total_pcs": 43
   },
   {
     "id": 3,
@@ -106,19 +106,19 @@
     "slug": "python",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 40,
-    "total_pcs": 56
+    "installed_count": 36,
+    "total_pcs": 43
   },
   {
     "id": 14,
-    "name": "Sql Server",
+    "name": "SQL Server",
     "category": "required",
     "description": "Microsoft SQL Server database",
     "slug": "sql-server",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 12,
-    "total_pcs": 56
+    "installed_count": 8,
+    "total_pcs": 43
   },
   {
     "id": 4,
@@ -128,8 +128,8 @@
     "slug": "unity",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 39,
-    "total_pcs": 56
+    "installed_count": 35,
+    "total_pcs": 43
   },
   {
     "id": 1,
@@ -139,8 +139,8 @@
     "slug": "visual-studio-code",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 41,
-    "total_pcs": 56
+    "installed_count": 37,
+    "total_pcs": 43
   },
   {
     "id": 7,
@@ -150,8 +150,8 @@
     "slug": "wireshark",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 33,
-    "total_pcs": 56
+    "installed_count": 29,
+    "total_pcs": 43
   },
   {
     "id": 75,
@@ -162,7 +162,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 5,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 63,
@@ -173,7 +173,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 59,
@@ -184,7 +184,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 105,
@@ -195,7 +195,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 82,
@@ -206,7 +206,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 3,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 83,
@@ -217,7 +217,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 20,
@@ -228,7 +228,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 11,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 24,
@@ -239,7 +239,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
+  },
+  {
+    "id": 96,
+    "name": "CPUID",
+    "category": "other",
+    "description": "",
+    "slug": "cpuid",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 36,
@@ -250,7 +261,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 84,
@@ -261,7 +272,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 64,
@@ -272,7 +283,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 65,
@@ -283,7 +294,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 100,
@@ -294,7 +305,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 15,
@@ -305,18 +316,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
-  },
-  {
-    "id": 96,
-    "name": "Cpuid",
-    "category": "other",
-    "description": "",
-    "slug": "cpuid",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 18,
@@ -327,7 +327,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 80,
@@ -338,7 +338,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 56,
@@ -349,7 +349,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 97,
@@ -360,7 +360,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 101,
@@ -371,7 +371,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 116,
@@ -382,7 +382,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 117,
@@ -393,18 +393,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 113,
-    "name": "Eclipse Temurin Jdk",
+    "name": "Eclipse Temurin JDK",
     "category": "other",
     "description": "",
     "slug": "eclipse-temurin-jdk",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 114,
@@ -415,7 +415,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 92,
@@ -426,7 +426,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 98,
@@ -437,7 +437,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 102,
@@ -448,7 +448,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 103,
@@ -459,7 +459,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 66,
@@ -470,7 +470,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 67,
@@ -481,7 +481,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 40,
@@ -492,7 +492,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 9,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 55,
@@ -503,7 +503,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 45,
@@ -514,7 +514,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 115,
@@ -525,7 +525,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 57,
@@ -536,7 +536,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 60,
@@ -547,7 +547,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 85,
@@ -558,7 +558,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 52,
@@ -569,7 +569,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
+  },
+  {
+    "id": 49,
+    "name": "Google Chrome",
+    "category": "other",
+    "description": "",
+    "slug": "google-chrome",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 21,
+    "total_pcs": 43
   },
   {
     "id": 86,
@@ -580,7 +591,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 4,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 38,
@@ -591,7 +602,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 23,
@@ -602,7 +613,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 21,
@@ -613,18 +624,40 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 5,
-    "total_pcs": 56
+    "total_pcs": 43
+  },
+  {
+    "id": 25,
+    "name": "IDM",
+    "category": "other",
+    "description": "",
+    "slug": "idm",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 77,
-    "name": "Internet Download Manager (idm)",
+    "name": "Internet Download Manager (IDM)",
     "category": "other",
     "description": "",
     "slug": "internet-download-manager-idm",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 4,
+    "total_pcs": 43
+  },
+  {
+    "id": 76,
+    "name": "Java",
+    "category": "other",
+    "description": "",
+    "slug": "java",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 3,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 93,
@@ -635,7 +668,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 68,
@@ -646,7 +679,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 4,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 46,
@@ -657,7 +690,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 50,
@@ -667,8 +700,19 @@
     "slug": "lively-wallpaper",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 3,
+    "total_pcs": 43
+  },
+  {
+    "id": 51,
+    "name": "MSYS2",
+    "category": "other",
+    "description": "",
+    "slug": "msys2",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 61,
@@ -679,7 +723,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 4,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 32,
@@ -690,7 +734,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 87,
@@ -701,7 +745,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 27,
@@ -712,7 +756,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 107,
@@ -722,8 +766,8 @@
     "slug": "mlwapp",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 0,
-    "total_pcs": 56
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 41,
@@ -734,18 +778,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 11,
-    "total_pcs": 56
-  },
-  {
-    "id": 51,
-    "name": "Msys2",
-    "category": "other",
-    "description": "",
-    "slug": "msys2",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 111,
@@ -756,7 +789,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 88,
@@ -767,18 +800,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 37,
-    "name": "Obs Studio",
+    "name": "OBS Studio",
     "category": "other",
     "description": "",
     "slug": "obs-studio",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 5,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 94,
@@ -789,7 +822,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 19,
@@ -799,8 +832,19 @@
     "slug": "opera-browser",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 5,
-    "total_pcs": 56
+    "installed_count": 6,
+    "total_pcs": 43
+  },
+  {
+    "id": 89,
+    "name": "Oracle V.M Virtual Box",
+    "category": "other",
+    "description": "",
+    "slug": "oracle-v-m-virtual-box",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 47,
@@ -811,18 +855,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
-  },
-  {
-    "id": 89,
-    "name": "Oracle Vm Virtual Box",
-    "category": "other",
-    "description": "",
-    "slug": "oracle-vm-virtual-box",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 78,
@@ -833,7 +866,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 106,
@@ -844,7 +877,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 69,
@@ -855,7 +888,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 81,
@@ -866,7 +899,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 17,
@@ -877,7 +910,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 28,
@@ -888,29 +921,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 4,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
-    "id": 128,
+    "id": 54,
     "name": "R.E.P.O",
     "category": "other",
     "description": "",
     "slug": "r-e-p-o",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 56
-  },
-  {
-    "id": 54,
-    "name": "R.e.p.o",
-    "category": "other",
-    "description": "",
-    "slug": "r-e-p-o-54",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 3,
-    "total_pcs": 56
+    "installed_count": 4,
+    "total_pcs": 43
   },
   {
     "id": 35,
@@ -921,7 +943,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 7,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 70,
@@ -932,7 +954,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 42,
@@ -943,7 +965,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 9,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 16,
@@ -953,8 +975,19 @@
     "slug": "roblox",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 25,
-    "total_pcs": 56
+    "installed_count": 26,
+    "total_pcs": 43
+  },
+  {
+    "id": 110,
+    "name": "SPSS",
+    "category": "other",
+    "description": "",
+    "slug": "spss",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 2,
+    "total_pcs": 43
   },
   {
     "id": 108,
@@ -964,8 +997,8 @@
     "slug": "samsung-dex",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 0,
-    "total_pcs": 56
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 95,
@@ -976,7 +1009,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 71,
@@ -987,7 +1020,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 62,
@@ -998,18 +1031,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 3,
-    "total_pcs": 56
-  },
-  {
-    "id": 110,
-    "name": "Spss",
-    "category": "other",
-    "description": "",
-    "slug": "spss",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 99,
@@ -1020,7 +1042,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 31,
@@ -1031,7 +1053,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 14,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 118,
@@ -1042,7 +1064,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 72,
@@ -1053,7 +1075,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 109,
@@ -1063,8 +1085,8 @@
     "slug": "testqcwin-rma",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 0,
-    "total_pcs": 56
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 73,
@@ -1075,7 +1097,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 74,
@@ -1086,7 +1108,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 90,
@@ -1097,7 +1119,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 33,
@@ -1107,8 +1129,8 @@
     "slug": "ubisoft-connect",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 6,
-    "total_pcs": 56
+    "installed_count": 1,
+    "total_pcs": 43
   },
   {
     "id": 34,
@@ -1119,7 +1141,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 112,
@@ -1130,7 +1152,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 43,
@@ -1141,7 +1163,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 7,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 79,
@@ -1152,7 +1174,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 53,
@@ -1163,7 +1185,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 104,
@@ -1174,18 +1196,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
-    "id": 129,
+    "id": 30,
     "name": "WPS Office",
     "category": "other",
     "description": "",
     "slug": "wps-office",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 56
+    "installed_count": 11,
+    "total_pcs": 43
   },
   {
     "id": 58,
@@ -1196,7 +1218,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 48,
@@ -1207,7 +1229,7 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
   },
   {
     "id": 22,
@@ -1218,7 +1240,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 2,
-    "total_pcs": 56
+    "total_pcs": 43
+  },
+  {
+    "id": 44,
+    "name": "Webadvisor Mcafee",
+    "category": "other",
+    "description": "",
+    "slug": "webadvisor-mcafee",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 4,
+    "total_pcs": 43
   },
   {
     "id": 91,
@@ -1229,7 +1262,18 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
-    "total_pcs": 56
+    "total_pcs": 43
+  },
+  {
+    "id": 29,
+    "name": "Windsurf",
+    "category": "other",
+    "description": "",
+    "slug": "windsurf",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 2,
+    "total_pcs": 43
   },
   {
     "id": 26,
@@ -1239,19 +1283,8 @@
     "slug": "winrar",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 26,
-    "total_pcs": 56
-  },
-  {
-    "id": 30,
-    "name": "Wps Office",
-    "category": "other",
-    "description": "",
-    "slug": "wps-office-30",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 9,
-    "total_pcs": 56
+    "installed_count": 27,
+    "total_pcs": 43
   },
   {
     "id": 39,
@@ -1262,6 +1295,6 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 3,
-    "total_pcs": 56
+    "total_pcs": 43
   }
 ]
