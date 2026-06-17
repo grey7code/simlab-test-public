@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script>var PUBLIC_BASE_PATH = '\/lab-kom-vokasi-1';</script>
+    <script src="/static/js/public.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/lab-kom-vokasi-1/dashboard.html">
+            <i class="bi bi-pc-display-horizontal"></i>
+            Inventaris Lab Kom
+        </a>
+        <span class="navbar-text ms-2 text-white-50 small">Lab Kom Vokasi 1</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPublic">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarPublic">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/lab-kom-vokasi-1/dashboard.html">
+                        <i class="bi bi-grid-3x3-gap"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/lab-kom-vokasi-1/pc/list.html">
+                        <i class="bi bi-pc-display"></i> PC
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/lab-kom-vokasi-1/devices/list.html">
+                        <i class="bi bi-hdd-rack"></i> Perangkat
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/lab-kom-vokasi-1/software/list.html">
+                        <i class="bi bi-app-indicator"></i> Software
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/lab-kom-vokasi-1/schedules/list.html">
+                        <i class="bi bi-calendar-event"></i> Jadwal
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container-fluid my-4">
+
+
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h2><i class="bi bi-grid-3x3-gap"></i> Dashboard Laboratorium Komputer</h2>
+            <p class="text-muted">Visualisasi status PC dalam grid</p>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-check-circle"></i> Normal</h5>
+                    <h2>37</h2>
+                    <small>PC dalam kondisi baik</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-white">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-exclamation-triangle"></i> Warning</h5>
+                    <h2>3</h2>
+                    <small>PC perlu perhatian</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-x-circle"></i> Rusak</h5>
+                    <h2>3</h2>
+                    <small>PC tidak berfungsi</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-secondary text-white">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-box-seam"></i> Cadangan</h5>
+                    <h2>0</h2>
+                    <small>PC tidak dipasang</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0"><i class="bi bi-grid"></i> Grid PC Laboratorium</h5>
+        </div>
+        <div class="card-body p-4 position-relative">
+            
+            <div class="container d-flex justify-content-end mb-3">
+                <div class="pc-card-wrapper pc-card-wrapper-special">
+                    <div class="pc-card pc-card-special pc-card-clickable status-normal"
+                         role="button" tabindex="0"
+                         aria-label="PC pc-dosen, Status normal"
+                         data-pc-id="41"
+                         data-pc-label="pc-dosen"
+                         data-pc-row="0"
+                         data-pc-column="1"
+                         data-pc-status="normal"
+                         data-pc-processor="Intel Core i7"
+                         data-pc-ram="16GB DDR4"
+                         data-pc-storage="1TB NVMe"
+                         data-pc-os=""
+                         data-pc-notes="-"
+                         style="cursor: pointer;">
+                        <div class="pc-number">pc-dosen</div>
+                        <div class="pc-icon"><i class="bi bi-person-badge"></i></div>
+                        <div class="pc-status-badge">
+                            
+                            <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i> Normal</span>
+                        </div>
+                        <div class="pc-windows-badge" id="win-badge-pc-dosen"></div>
+                        <div class="pc-windows-text" id="win-text-pc-dosen"></div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="pc-grid-scroll">
+                <div class="pc-grid">
+                    
+                    <div class="pc-row">
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-1, Status normal"
+                                 data-pc-id="1"
+                                 data-pc-label="pc-1"
+                                 data-pc-row="1"
+                                 data-pc-column="1"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 23H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-1</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-1"></div>
+                                <div class="pc-windows-text" id="win-text-pc-1"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-2, Status normal"
+                                 data-pc-id="2"
+                                 data-pc-label="pc-2"
+                                 data-pc-row="1"
+                                 data-pc-column="2"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-2</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-2"></div>
+                                <div class="pc-windows-text" id="win-text-pc-2"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-3, Status normal"
+                                 data-pc-id="3"
+                                 data-pc-label="pc-3"
+                                 data-pc-row="1"
+                                 data-pc-column="3"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 10 Pro 22H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-3</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-3"></div>
+                                <div class="pc-windows-text" id="win-text-pc-3"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-4, Status normal"
+                                 data-pc-id="4"
+                                 data-pc-label="pc-4"
+                                 data-pc-row="1"
+                                 data-pc-column="4"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-4</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-4"></div>
+                                <div class="pc-windows-text" id="win-text-pc-4"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-5, Status normal"
+                                 data-pc-id="5"
+                                 data-pc-label="pc-5"
+                                 data-pc-row="1"
+                                 data-pc-column="5"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-5</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-5"></div>
+                                <div class="pc-windows-text" id="win-text-pc-5"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-6, Status normal"
+                                 data-pc-id="6"
+                                 data-pc-label="pc-6"
+                                 data-pc-row="1"
+                                 data-pc-column="6"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-6</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-6"></div>
+                                <div class="pc-windows-text" id="win-text-pc-6"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-7, Status normal"
+                                 data-pc-id="7"
+                                 data-pc-label="pc-7"
+                                 data-pc-row="1"
+                                 data-pc-column="7"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-7</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-7"></div>
+                                <div class="pc-windows-text" id="win-text-pc-7"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-8, Status normal"
+                                 data-pc-id="8"
+                                 data-pc-label="pc-8"
+                                 data-pc-row="1"
+                                 data-pc-column="8"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 23H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-8</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-8"></div>
+                                <div class="pc-windows-text" id="win-text-pc-8"></div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="pc-row">
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-9, Status normal"
+                                 data-pc-id="9"
+                                 data-pc-label="pc-9"
+                                 data-pc-row="2"
+                                 data-pc-column="1"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 10 Pro 22H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-9</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-9"></div>
+                                <div class="pc-windows-text" id="win-text-pc-9"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-10, Status normal"
+                                 data-pc-id="10"
+                                 data-pc-label="pc-10"
+                                 data-pc-row="2"
+                                 data-pc-column="2"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-10</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-10"></div>
+                                <div class="pc-windows-text" id="win-text-pc-10"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-11, Status normal"
+                                 data-pc-id="11"
+                                 data-pc-label="pc-11"
+                                 data-pc-row="2"
+                                 data-pc-column="3"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-11</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-11"></div>
+                                <div class="pc-windows-text" id="win-text-pc-11"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-12, Status normal"
+                                 data-pc-id="12"
+                                 data-pc-label="pc-12"
+                                 data-pc-row="2"
+                                 data-pc-column="4"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-12</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-12"></div>
+                                <div class="pc-windows-text" id="win-text-pc-12"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-13, Status normal"
+                                 data-pc-id="13"
+                                 data-pc-label="pc-13"
+                                 data-pc-row="2"
+                                 data-pc-column="5"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-13</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-13"></div>
+                                <div class="pc-windows-text" id="win-text-pc-13"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-14, Status normal"
+                                 data-pc-id="14"
+                                 data-pc-label="pc-14"
+                                 data-pc-row="2"
+                                 data-pc-column="6"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 23H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-14</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-14"></div>
+                                <div class="pc-windows-text" id="win-text-pc-14"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-15, Status normal"
+                                 data-pc-id="15"
+                                 data-pc-label="pc-15"
+                                 data-pc-row="2"
+                                 data-pc-column="7"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-15</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-15"></div>
+                                <div class="pc-windows-text" id="win-text-pc-15"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-16, Status normal"
+                                 data-pc-id="16"
+                                 data-pc-label="pc-16"
+                                 data-pc-row="2"
+                                 data-pc-column="8"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-16</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-16"></div>
+                                <div class="pc-windows-text" id="win-text-pc-16"></div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="pc-row">
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-17, Status normal"
+                                 data-pc-id="17"
+                                 data-pc-label="pc-17"
+                                 data-pc-row="3"
+                                 data-pc-column="1"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-17</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-17"></div>
+                                <div class="pc-windows-text" id="win-text-pc-17"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-18, Status normal"
+                                 data-pc-id="18"
+                                 data-pc-label="pc-18"
+                                 data-pc-row="3"
+                                 data-pc-column="2"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-18</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-18"></div>
+                                <div class="pc-windows-text" id="win-text-pc-18"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-19, Status normal"
+                                 data-pc-id="19"
+                                 data-pc-label="pc-19"
+                                 data-pc-row="3"
+                                 data-pc-column="3"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 23H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-19</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-19"></div>
+                                <div class="pc-windows-text" id="win-text-pc-19"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-20, Status normal"
+                                 data-pc-id="20"
+                                 data-pc-label="pc-20"
+                                 data-pc-row="3"
+                                 data-pc-column="4"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-20</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-20"></div>
+                                <div class="pc-windows-text" id="win-text-pc-20"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-21, Status normal"
+                                 data-pc-id="21"
+                                 data-pc-label="pc-21"
+                                 data-pc-row="3"
+                                 data-pc-column="5"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-21</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-21"></div>
+                                <div class="pc-windows-text" id="win-text-pc-21"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-22, Status normal"
+                                 data-pc-id="22"
+                                 data-pc-label="pc-22"
+                                 data-pc-row="3"
+                                 data-pc-column="6"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 23H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-22</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-22"></div>
+                                <div class="pc-windows-text" id="win-text-pc-22"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-23, Status normal"
+                                 data-pc-id="23"
+                                 data-pc-label="pc-23"
+                                 data-pc-row="3"
+                                 data-pc-column="7"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-23</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-23"></div>
+                                <div class="pc-windows-text" id="win-text-pc-23"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-24, Status normal"
+                                 data-pc-id="24"
+                                 data-pc-label="pc-24"
+                                 data-pc-row="3"
+                                 data-pc-column="8"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-24</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-24"></div>
+                                <div class="pc-windows-text" id="win-text-pc-24"></div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="pc-row">
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-25, Status normal"
+                                 data-pc-id="25"
+                                 data-pc-label="pc-25"
+                                 data-pc-row="4"
+                                 data-pc-column="1"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-25</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-25"></div>
+                                <div class="pc-windows-text" id="win-text-pc-25"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-26, Status normal"
+                                 data-pc-id="26"
+                                 data-pc-label="pc-26"
+                                 data-pc-row="4"
+                                 data-pc-column="2"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-26</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-26"></div>
+                                <div class="pc-windows-text" id="win-text-pc-26"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-27, Status normal"
+                                 data-pc-id="27"
+                                 data-pc-label="pc-27"
+                                 data-pc-row="4"
+                                 data-pc-column="3"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-27</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-27"></div>
+                                <div class="pc-windows-text" id="win-text-pc-27"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-28, Status normal"
+                                 data-pc-id="28"
+                                 data-pc-label="pc-28"
+                                 data-pc-row="4"
+                                 data-pc-column="4"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-28</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-28"></div>
+                                <div class="pc-windows-text" id="win-text-pc-28"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-29, Status normal"
+                                 data-pc-id="29"
+                                 data-pc-label="pc-29"
+                                 data-pc-row="4"
+                                 data-pc-column="5"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-29</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-29"></div>
+                                <div class="pc-windows-text" id="win-text-pc-29"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-30, Status normal"
+                                 data-pc-id="30"
+                                 data-pc-label="pc-30"
+                                 data-pc-row="4"
+                                 data-pc-column="6"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes="Mouse DPI nya cepet dan kadang ngebug ngeblink² gitu gerakan nya"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-30</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-30"></div>
+                                <div class="pc-windows-text" id="win-text-pc-30"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-31, Status normal"
+                                 data-pc-id="31"
+                                 data-pc-label="pc-31"
+                                 data-pc-row="4"
+                                 data-pc-column="7"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-31</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-31"></div>
+                                <div class="pc-windows-text" id="win-text-pc-31"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-32, Status normal"
+                                 data-pc-id="32"
+                                 data-pc-label="pc-32"
+                                 data-pc-row="4"
+                                 data-pc-column="8"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-32</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-32"></div>
+                                <div class="pc-windows-text" id="win-text-pc-32"></div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="pc-row">
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-33, Status normal"
+                                 data-pc-id="33"
+                                 data-pc-label="pc-33"
+                                 data-pc-row="5"
+                                 data-pc-column="1"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os=""
+                                 data-pc-notes="Belum dicatat"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-33</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-33"></div>
+                                <div class="pc-windows-text" id="win-text-pc-33"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-normal"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-34, Status normal"
+                                 data-pc-id="34"
+                                 data-pc-label="pc-34"
+                                 data-pc-row="5"
+                                 data-pc-column="2"
+                                 data-pc-status="normal"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes=""
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-34</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-34"></div>
+                                <div class="pc-windows-text" id="win-text-pc-34"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-warning"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-35, Status warning"
+                                 data-pc-id="35"
+                                 data-pc-label="pc-35"
+                                 data-pc-row="5"
+                                 data-pc-column="3"
+                                 data-pc-status="warning"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes="ada bulatan hitam di sisi kanan atas monitor"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-35</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-warning"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-35"></div>
+                                <div class="pc-windows-text" id="win-text-pc-35"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-warning"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-36, Status warning"
+                                 data-pc-id="36"
+                                 data-pc-label="pc-36"
+                                 data-pc-row="5"
+                                 data-pc-column="4"
+                                 data-pc-status="warning"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes="Ada 2 bulatan hitam di sisi kanan dan kiri atas monitor"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-36</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-warning"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-36"></div>
+                                <div class="pc-windows-text" id="win-text-pc-36"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-warning"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-37, Status warning"
+                                 data-pc-id="37"
+                                 data-pc-label="pc-37"
+                                 data-pc-row="5"
+                                 data-pc-column="5"
+                                 data-pc-status="warning"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 11 Pro 25H2"
+                                 data-pc-notes="ada 3 bulatan hitam, 1 di sisi kanan atas, 2 di sisi kiri atas"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-37</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-warning"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-37"></div>
+                                <div class="pc-windows-text" id="win-text-pc-37"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-broken"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-38, Status broken"
+                                 data-pc-id="38"
+                                 data-pc-label="pc-38"
+                                 data-pc-row="5"
+                                 data-pc-column="6"
+                                 data-pc-status="broken"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os=""
+                                 data-pc-notes="PC Black Screen, tidak bisa load ke Windows, dan saat dimatikan lewat tombol di kanan monitor, PC malah loop nyala lagi"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-38</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-danger"><i class="bi bi-x-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-38"></div>
+                                <div class="pc-windows-text" id="win-text-pc-38"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-broken"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-39, Status broken"
+                                 data-pc-id="39"
+                                 data-pc-label="pc-39"
+                                 data-pc-row="5"
+                                 data-pc-column="7"
+                                 data-pc-status="broken"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os="Windows 10 Pro 22H2"
+                                 data-pc-notes="Layar retak dalam, retaknya hampir setengah layar"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-39</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-danger"><i class="bi bi-x-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-39"></div>
+                                <div class="pc-windows-text" id="win-text-pc-39"></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="pc-card-wrapper ">
+                            
+                            <div class="pc-card pc-card-clickable status-broken"
+                                 role="button" tabindex="0"
+                                 aria-label="PC pc-40, Status broken"
+                                 data-pc-id="40"
+                                 data-pc-label="pc-40"
+                                 data-pc-row="5"
+                                 data-pc-column="8"
+                                 data-pc-status="broken"
+                                 data-pc-processor="Intel Core i7"
+                                 data-pc-ram="16GB DDR4"
+                                 data-pc-storage="1TB NVMe"
+                                 data-pc-os=""
+                                 data-pc-notes="PC Black Screen, tidak bisa load ke Windows, kalau yg ini tidak looping nyala lagi saat ditekan tombol power di kanan monitornya. Juga bagian laci keyboard susah dibuka (sepertinya agak stuck)"
+                                 style="cursor: pointer;">
+                                <div class="pc-number">pc-40</div>
+                                <div class="pc-icon"><i class="bi bi-pc-display"></i></div>
+                                <div class="pc-status-badge">
+                                    
+                                    <span class="badge bg-danger"><i class="bi bi-x-circle-fill"></i></span>
+                                </div>
+                                <div class="pc-windows-badge" id="win-badge-pc-40"></div>
+                                <div class="pc-windows-text" id="win-text-pc-40"></div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="mt-4">
+                
+                <div class="container d-flex">
+                    <div class="pc-card-wrapper pc-card-wrapper-special">
+                    <div class="pc-card pc-card-special pc-card-clickable status-normal"
+                         role="button" tabindex="0"
+                         aria-label="PC pc-laboran, Status normal"
+                         data-pc-id="42"
+                         data-pc-label="pc-laboran"
+                         data-pc-row="0"
+                         data-pc-column="2"
+                         data-pc-status="normal"
+                         data-pc-processor="Intel Core i7"
+                         data-pc-ram="16GB DDR4"
+                         data-pc-storage="1TB NVMe"
+                         data-pc-os=""
+                         data-pc-notes="-"
+                         style="cursor: pointer;">
+                        <div class="pc-number">pc-laboran</div>
+                        <div class="pc-icon"><i class="bi bi-tools"></i></div>
+                        <div class="pc-status-badge">
+                            
+                            <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i> Normal</span>
+                        </div>
+                        <div class="pc-windows-badge" id="win-badge-pc-laboran"></div>
+                        <div class="pc-windows-text" id="win-text-pc-laboran"></div>
+                    </div>
+                    </div>
+                </div>
+                
+                
+                <div class="container d-flex mt-2">
+                    <div class="pc-card-wrapper pc-card-wrapper-special">
+                    <div class="pc-card pc-card-special pc-card-clickable status-normal"
+                         role="button" tabindex="0"
+                         aria-label="PC pc-cctv, Status normal"
+                         data-pc-id="43"
+                         data-pc-label="pc-cctv"
+                         data-pc-row="0"
+                         data-pc-column="3"
+                         data-pc-status="normal"
+                         data-pc-processor="Intel Core i7"
+                         data-pc-ram="16GB DDR4"
+                         data-pc-storage="1TB NVMe"
+                         data-pc-os=""
+                         data-pc-notes="-"
+                         style="cursor: pointer;">
+                        <div class="pc-number">pc-cctv</div>
+                        <div class="pc-icon"><i class="bi bi-camera-video"></i></div>
+                        <div class="pc-status-badge">
+                            
+                            <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i> Normal</span>
+                        </div>
+                        <div class="pc-windows-badge" id="win-badge-pc-cctv"></div>
+                        <div class="pc-windows-text" id="win-text-pc-cctv"></div>
+                    </div>
+                    </div>
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="pcDetailModal" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="pcDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pcDetailModalLabel">PC Detail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-sm">
+                    <tr><th width="40%">Posisi:</th><td id="modal-position">-</td></tr>
+                    <tr><th>Status:</th><td><span id="modal-status-badge" class="badge">-</span></td></tr>
+                    <tr><th>Processor:</th><td id="modal-processor">-</td></tr>
+                    <tr><th>RAM:</th><td id="modal-ram">-</td></tr>
+                    <tr><th>Storage:</th><td id="modal-storage">-</td></tr>
+                    <tr><th>Sistem Operasi:</th><td id="modal-os">-</td></tr>
+                    <tr><th>Catatan:</th><td id="modal-notes">-</td></tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" id="modal-detail-link" class="btn btn-primary btn-sm"><i class="bi bi-eye"></i> Lihat Detail</a>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var pcDetailModal = null;
+function getPCDetailModal() {
+    if (!pcDetailModal) { var el = document.getElementById('pcDetailModal'); if (el) pcDetailModal = new bootstrap.Modal(el); }
+    return pcDetailModal;
+}
+
+function parseWindowsVersion(osString) {
+    if (!osString || osString === '-') return { badgeClass: 'windows-other', shortText: '-', fullText: osString };
+    var os = osString.toLowerCase();
+    if (os.indexOf('windows 11') !== -1 && os.indexOf('25h2') !== -1) return { badgeClass: 'windows-11-25h2', shortText: 'W11', fullText: 'Win 11 Pro 25H2' };
+    if (os.indexOf('windows 11') !== -1 && os.indexOf('23h2') !== -1) return { badgeClass: 'windows-11-23h2', shortText: 'W11', fullText: 'Win 11 Pro 23H2' };
+    if (os.indexOf('windows 10') !== -1 && os.indexOf('22h2') !== -1) return { badgeClass: 'windows-10-22h2', shortText: 'W10', fullText: 'Win 10 Pro 22H2' };
+    return { badgeClass: 'windows-other', shortText: 'OS', fullText: osString };
+}
+
+function initWindowsBadges() {
+    document.querySelectorAll('.pc-card-clickable').forEach(function(card) {
+        var label = card.getAttribute('data-pc-label');
+        var os = card.getAttribute('data-pc-os') || '';
+        var winInfo = parseWindowsVersion(os);
+        var badge = document.getElementById('win-badge-' + label);
+        if (badge && winInfo.shortText !== '-') { badge.textContent = winInfo.shortText; badge.className = 'pc-windows-badge ' + winInfo.badgeClass; }
+        else if (badge) { badge.className = 'pc-windows-badge d-none'; }
+        var text = document.getElementById('win-text-' + label);
+        if (text && winInfo.fullText !== '-') { text.textContent = winInfo.fullText; }
+    });
+}
+
+window.openPCModal = function(card) {
+    var pcLabel = card.getAttribute('data-pc-label');
+    var pcRow = card.getAttribute('data-pc-row') || '-';
+    var pcColumn = card.getAttribute('data-pc-column') || '-';
+    var pcStatus = card.getAttribute('data-pc-status');
+    var pcProcessor = card.getAttribute('data-pc-processor') || '-';
+    var pcRam = card.getAttribute('data-pc-ram') || '-';
+    var pcStorage = card.getAttribute('data-pc-storage') || '-';
+    var pcOs = card.getAttribute('data-pc-os') || '-';
+    var pcNotes = card.getAttribute('data-pc-notes') || '-';
+
+    document.getElementById('pcDetailModalLabel').textContent = pcLabel + ' Detail';
+    document.getElementById('modal-position').textContent = 'Baris ' + pcRow + ', Kolom ' + pcColumn;
+    document.getElementById('modal-processor').textContent = pcProcessor;
+    document.getElementById('modal-ram').textContent = pcRam;
+    document.getElementById('modal-storage').textContent = pcStorage;
+    document.getElementById('modal-os').textContent = pcOs;
+    document.getElementById('modal-notes').textContent = pcNotes;
+
+    var statusBadge = document.getElementById('modal-status-badge');
+    var statusLabel = {normal: 'Normal', warning: 'Warning', broken: 'Rusak'}[pcStatus] || pcStatus;
+    statusBadge.textContent = statusLabel;
+    statusBadge.className = 'badge';
+    if (pcStatus === 'normal') statusBadge.classList.add('bg-success');
+    else if (pcStatus === 'warning') statusBadge.classList.add('bg-warning');
+    else if (pcStatus === 'broken') statusBadge.classList.add('bg-danger');
+    else statusBadge.classList.add('bg-secondary');
+
+    document.getElementById('modal-detail-link').href = PUBLIC_BASE_PATH + '/pc/detail/' + pcLabel + '.html';
+
+    var modal = getPCDetailModal();
+    if (modal) modal.show();
+};
+
+function bindPCCards() {
+    document.querySelectorAll('.pc-card-clickable').forEach(function(card) {
+        card.addEventListener('click', function() { openPCModal(this); });
+        card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPCModal(this); }
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initWindowsBadges();
+    bindPCCards();
+});
+</script>
+
+
+    </div>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
