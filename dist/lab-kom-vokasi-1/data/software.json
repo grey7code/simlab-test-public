@@ -188,7 +188,7 @@
   },
   {
     "id": 105,
-    "name": "Banana Hell: Mountain Of Madness (game)",
+    "name": "Banana Hell: Mountain of Madness (Game)",
     "category": "other",
     "description": "",
     "slug": "banana-hell-mountain-of-madness-game",
@@ -364,7 +364,7 @@
   },
   {
     "id": 101,
-    "name": "Denuvo Anti Cheat",
+    "name": "Denuvo anti cheat",
     "category": "other",
     "description": "",
     "slug": "denuvo-anti-cheat",
@@ -441,7 +441,7 @@
   },
   {
     "id": 102,
-    "name": "Fears To Fathom Episode 1",
+    "name": "Fears to Fathom Episode 1",
     "category": "other",
     "description": "",
     "slug": "fears-to-fathom-episode-1",
@@ -452,7 +452,7 @@
   },
   {
     "id": 103,
-    "name": "Fears To Fathom Ironbark Lookout",
+    "name": "Fears to Fathom Ironbark Lookout",
     "category": "other",
     "description": "",
     "slug": "fears-to-fathom-ironbark-lookout",
@@ -506,22 +506,22 @@
     "total_pcs": 43
   },
   {
-    "id": 45,
-    "name": "Gamehouse",
+    "id": 115,
+    "name": "GameLoop",
     "category": "other",
     "description": "",
-    "slug": "gamehouse",
+    "slug": "gameloop",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
     "total_pcs": 43
   },
   {
-    "id": 115,
-    "name": "Gameloop",
+    "id": 45,
+    "name": "Gamehouse",
     "category": "other",
     "description": "",
-    "slug": "gameloop",
+    "slug": "gamehouse",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
@@ -704,6 +704,28 @@
     "total_pcs": 43
   },
   {
+    "id": 87,
+    "name": "MEmu",
+    "category": "other",
+    "description": "",
+    "slug": "memu",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
+  },
+  {
+    "id": 107,
+    "name": "MLWapp",
+    "category": "other",
+    "description": "",
+    "slug": "mlwapp",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
+  },
+  {
     "id": 51,
     "name": "MSYS2",
     "category": "other",
@@ -737,33 +759,11 @@
     "total_pcs": 43
   },
   {
-    "id": 87,
-    "name": "Memu",
-    "category": "other",
-    "description": "",
-    "slug": "memu",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 43
-  },
-  {
     "id": 27,
     "name": "Mendeley",
     "category": "other",
     "description": "",
     "slug": "mendeley",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 43
-  },
-  {
-    "id": 107,
-    "name": "Mlwapp",
-    "category": "other",
-    "description": "",
-    "slug": "mlwapp",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
@@ -782,7 +782,7 @@
   },
   {
     "id": 111,
-    "name": "Mysql",
+    "name": "MySQL",
     "category": "other",
     "description": "",
     "slug": "mysql",
@@ -815,7 +815,7 @@
   },
   {
     "id": 94,
-    "name": "Openal",
+    "name": "OpenAL",
     "category": "other",
     "description": "",
     "slug": "openal",
@@ -837,10 +837,10 @@
   },
   {
     "id": 89,
-    "name": "Oracle V.M Virtual Box",
+    "name": "Oracle VM Virtual Box",
     "category": "other",
     "description": "",
-    "slug": "oracle-v-m-virtual-box",
+    "slug": "oracle-vm-virtual-box",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
@@ -848,7 +848,7 @@
   },
   {
     "id": 47,
-    "name": "Oracle Virtualbox",
+    "name": "Oracle VirtualBox",
     "category": "other",
     "description": "",
     "slug": "oracle-virtualbox",
@@ -935,6 +935,17 @@
     "total_pcs": 43
   },
   {
+    "id": 70,
+    "name": "REDLauncher",
+    "category": "other",
+    "description": "",
+    "slug": "redlauncher",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
+  },
+  {
     "id": 35,
     "name": "Rainmeter",
     "category": "other",
@@ -943,17 +954,6 @@
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 7,
-    "total_pcs": 43
-  },
-  {
-    "id": 70,
-    "name": "Redlauncher",
-    "category": "other",
-    "description": "",
-    "slug": "redlauncher",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
     "total_pcs": 43
   },
   {
@@ -1002,7 +1002,7 @@
   },
   {
     "id": 95,
-    "name": "Shooterspool",
+    "name": "ShootersPool",
     "category": "other",
     "description": "",
     "slug": "shooterspool",
@@ -1035,7 +1035,7 @@
   },
   {
     "id": 99,
-    "name": "Staruml",
+    "name": "StarUML",
     "category": "other",
     "description": "",
     "slug": "staruml",
@@ -1079,7 +1079,7 @@
   },
   {
     "id": 109,
-    "name": "Testqcwin-rma",
+    "name": "TestQCWin-RMA",
     "category": "other",
     "description": "",
     "slug": "testqcwin-rma",
@@ -1155,6 +1155,28 @@
     "total_pcs": 43
   },
   {
+    "id": 79,
+    "name": "VFunLauncher",
+    "category": "other",
+    "description": "",
+    "slug": "vfunlauncher",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
+  },
+  {
+    "id": 104,
+    "name": "VRoid Studio",
+    "category": "other",
+    "description": "",
+    "slug": "vroid-studio",
+    "created_at": "0001-01-01T00:00:00Z",
+    "updated_at": "0001-01-01T00:00:00Z",
+    "installed_count": 1,
+    "total_pcs": 43
+  },
+  {
     "id": 43,
     "name": "Valorant",
     "category": "other",
@@ -1166,33 +1188,11 @@
     "total_pcs": 43
   },
   {
-    "id": 79,
-    "name": "Vfunlauncher",
-    "category": "other",
-    "description": "",
-    "slug": "vfunlauncher",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 43
-  },
-  {
     "id": 53,
     "name": "Virtual Box Oracle",
     "category": "other",
     "description": "",
     "slug": "virtual-box-oracle",
-    "created_at": "0001-01-01T00:00:00Z",
-    "updated_at": "0001-01-01T00:00:00Z",
-    "installed_count": 1,
-    "total_pcs": 43
-  },
-  {
-    "id": 104,
-    "name": "Vroid Studio",
-    "category": "other",
-    "description": "",
-    "slug": "vroid-studio",
     "created_at": "0001-01-01T00:00:00Z",
     "updated_at": "0001-01-01T00:00:00Z",
     "installed_count": 1,
@@ -1244,7 +1244,7 @@
   },
   {
     "id": 44,
-    "name": "Webadvisor Mcafee",
+    "name": "Webadvisor McAfee",
     "category": "other",
     "description": "",
     "slug": "webadvisor-mcafee",
@@ -1288,7 +1288,7 @@
   },
   {
     "id": 39,
-    "name": "Z-launcher",
+    "name": "Z-Launcher",
     "category": "other",
     "description": "",
     "slug": "z-launcher",
