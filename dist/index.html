@@ -1,1 +1,50 @@
-<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/dashboard.html"></head><body></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pilih Laboratorium</title>
+<link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/static/vendor/bootstrap-icons/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/static/css/style.css">
+<style>
+body { display:flex; align-items:center; justify-content:center; min-height:100vh; background:#f5f7fa; }
+.card { transition: transform .2s; cursor:pointer; }
+.card:hover { transform:translateY(-4px); box-shadow:0 8px 25px rgba(0,0,0,.15); }
+</style>
+</head>
+<body>
+<div class="container text-center">
+<h1 class="mb-2"><i class="bi bi-pc-display-horizontal"></i> Inventaris Lab Kom</h1>
+<p class="text-muted mb-5">Pilih laboratorium untuk melihat inventaris</p>
+<div class="row justify-content-center g-4">
+
+<div class="col-md-4">
+<a href="/lab-kom-mi/dashboard.html" class="text-decoration-none">
+<div class="card shadow-sm h-100">
+<div class="card-body text-center py-5">
+<i class="bi bi-building fs-1 text-primary"></i>
+<h4 class="mt-3">Lab Kom MI</h4>
+<p class="text-muted small mb-0">lab-kom-mi</p>
+</div>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+<a href="/lab-kom-vokasi-1/dashboard.html" class="text-decoration-none">
+<div class="card shadow-sm h-100">
+<div class="card-body text-center py-5">
+<i class="bi bi-building fs-1 text-primary"></i>
+<h4 class="mt-3">Lab Kom Vokasi 1</h4>
+<p class="text-muted small mb-0">lab-kom-vokasi-1</p>
+</div>
+</div>
+</a>
+</div>
+
+</div>
+</div>
+<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
